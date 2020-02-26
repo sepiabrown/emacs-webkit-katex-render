@@ -175,8 +175,9 @@
 
 (defun webkit-katex-render--get-xwidget ()
   "Return Xwidget instance."
+  (if (get-buffer webkit-katex-render--buffer-name)
   (with-current-buffer webkit-katex-render--buffer-name
-    (xwidget-at 1)))
+    (xwidget-at 1))))
 
 (defun webkit-katex-render--execute-script (script &optional fn)
   "Execute SCRIPT in embedded Xwidget and run optional callback FN."
