@@ -83,8 +83,8 @@
     (posframe-show buffer
                    :position pos
                    :poshandler 'posframe-poshandler-point-bottom-left-corner
-                   :width 1
-                   :height 1
+                   :width 10
+                   :height 2
                    :internal-border-width 5
                    :background-color webkit-katex-render--background-color)))
 
